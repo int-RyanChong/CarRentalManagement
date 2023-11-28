@@ -29,7 +29,9 @@ namespace CarRentalManagement.Server.Controllers
         public async Task<IActionResult> GetVehicles()
         {
             // Refactored
-            var Vehicles = await _unitOfWork.Vehicles.GetAll();
+#pragma warning disable CS8619 // Nullability of reference types in value doesn't match target type.
+            var Vehicles = await _unitOfWork.Vehicles.GetAll(includes: q => q.Include(x => x.Make).Include(x => x.Model).Include(x => x.Colour));
+#pragma warning restore CS8619 // Nullability of reference types in value doesn't match target type.
             return Ok(Vehicles);
         }
 
