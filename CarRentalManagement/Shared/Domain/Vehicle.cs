@@ -18,5 +18,6 @@ namespace CarRentalManagement.Shared.Domain
         public virtual Colour? Colour { get; set; }
         // This is to make a foreign key that has a different name here then the primary key it refers to
         public virtual List<Booking>? Bookings { get; set; }
+        public double RentalRate { get; set; }
     }
 }
