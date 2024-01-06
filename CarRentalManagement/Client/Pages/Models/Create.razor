@@ -6,30 +6,12 @@
 <hr />
 <br />
 
-<EditForm Model="@model" OnValidSubmit="CreateModel">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+<FormComponent ButtonText="Create Nodel" model="model" OnValidSubmit="@CreateModel" />
 
-    <div class="form-group">
-        <label>Name: </label>
-        <div>
-            <InputText @bind-Value="@model.Name" class="form-control" />
-            <ValidationMessage For="@(() => model.Name)" />
-        </div>
-    </div>
-
-    <br />
-    <br />
-
-    <button type="submit" class="btn btn-success btn-block">
-        Create Make
-    </button>
-
-</EditForm>
 
 
 @code {
-    Make model = new Make();
+    Model model = new Model();
 
     private async Task CreateModel()
     {

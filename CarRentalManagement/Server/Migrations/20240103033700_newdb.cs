@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -374,15 +374,15 @@ namespace CarRentalManagement.Server.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "3781efa7-66dc-47f0-860f-e506d04102e4", 0, "eb17e346-4f47-407c-98ad-620e90c22866", "admin@localhost.com", false, "Admin", "User", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAIAAYagAAAAEMMTA8DpGHVg9MD0gRzsyEFkSXJXiL6a3ydrwPjMLgUjo45uy2zRibGhRisHXKIEyw==", null, false, "e309a220-5aa9-423a-a6bf-3c698a17cbab", false, "admin@localhost.com" });
+                values: new object[] { "3781efa7-66dc-47f0-860f-e506d04102e4", 0, "e0757142-c5a6-47f4-a86c-94d4c3b07a87", "admin@localhost.com", false, "Admin", "User", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAIAAYagAAAAECtC0WQYMHrmppNaNf32300Pkr5rpn1fp07PLFrdGCjQkJhGe4KotHOIUPsBitsuYw==", null, false, "717073d5-1039-42e9-a8fc-7e54de4ca142", false, "admin@localhost.com" });
 
             migrationBuilder.InsertData(
                 table: "Colours",
                 columns: new[] { "Id", "CreatedBy", "DateCreated", "DateUpdated", "Name", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { 1, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8087), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8088), "Black", "System" },
-                    { 2, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8091), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8091), "Blue", "System" }
+                    { 1, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7469), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7471), "Black", "System" },
+                    { 2, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7472), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7473), "Blue", "System" }
                 });
 
             migrationBuilder.InsertData(
@@ -390,8 +390,8 @@ namespace CarRentalManagement.Server.Migrations
                 columns: new[] { "Id", "CreatedBy", "DateCreated", "DateUpdated", "Name", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { 1, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(7700), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(7711), "BMW", "System" },
-                    { 2, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(7713), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(7714), "Toyota", "System" }
+                    { 1, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7056), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7069), "BMW", "System" },
+                    { 2, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7071), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7072), "Toyota", "System" }
                 });
 
             migrationBuilder.InsertData(
@@ -399,10 +399,10 @@ namespace CarRentalManagement.Server.Migrations
                 columns: new[] { "Id", "CreatedBy", "DateCreated", "DateUpdated", "Name", "UpdatedBy" },
                 values: new object[,]
                 {
-                    { 1, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8331), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8332), "3 Series", "System" },
-                    { 2, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8333), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8334), "X5", "System" },
-                    { 3, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8335), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8335), "Prius", "System" },
-                    { 4, "System", new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8336), new DateTime(2024, 1, 2, 14, 14, 47, 390, DateTimeKind.Local).AddTicks(8337), "Rav4", "System" }
+                    { 1, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7689), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7690), "3 Series", "System" },
+                    { 2, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7692), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7693), "X5", "System" },
+                    { 3, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7694), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7695), "Prius", "System" },
+                    { 4, "System", new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7696), new DateTime(2024, 1, 3, 11, 37, 0, 177, DateTimeKind.Local).AddTicks(7696), "Rav4", "System" }
                 });
 
             migrationBuilder.InsertData(
